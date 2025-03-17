@@ -1,15 +1,15 @@
-import { Song } from "@/types/Song";
 import { Link } from "react-router-dom";
 import { Card } from "./Card";
+import { Artist } from "@/types/Artist";
 interface Props {
   title: string;
   showMore: string;
-  songs: Song[];
+  artists: Artist[];
 }
-export const HorizontalSongList: React.FC<Props> = ({
+export const HorizontalArtistList: React.FC<Props> = ({
   title,
   showMore,
-  songs,
+  artists,
 }) => {
   return (
     <div>
@@ -18,11 +18,14 @@ export const HorizontalSongList: React.FC<Props> = ({
         <Link to={showMore}>Tất cả</Link>
       </div>
       <div className="grid grid-cols-12 gap-5 mt-3">
-        {songs.map((item) => (
+        {artists.map((item) => (
           <Card
+            title={item.name}
+            thumbnail={item.thumbnail}
+            url={""}
             key={item.id}
-            {...item}
-            subtitle={item.artists[0].name}
+            rounded
+            subtitle="Artist"
           />
         ))}
       </div>

@@ -28,26 +28,26 @@ export const trendingSongs: Song[] = [
 
   {
     id: "1",
-    title: "DANCING IN THE DARK",
+    title: "EVIL JORDAN",
     thumbnail:
-      "https://i.scdn.co/image/ab67616d00001e028bdbdf691a5b791a5afb515b",
-    artists: [{ id: "1", name: "SOOBIN" }],
+      "https://i.scdn.co/image/ab67616d00001e024738d40fd634c7d08419b1e4",
+    artists: [{ id: "1", name: "Playboi Carti" }],
     url: "",
   },
   {
     id: "1",
-    title: "DANCING IN THE DARK",
+    title: "Lễ Đường",
     thumbnail:
-      "https://i.scdn.co/image/ab67616d00001e028bdbdf691a5b791a5afb515b",
-    artists: [{ id: "1", name: "SOOBIN" }],
+      "https://i.scdn.co/image/ab67616d00001e0210ccec5b14a7b1b5c552d5cc",
+    artists: [{ id: "1", name: "Kai Đinh" }],
     url: "",
   },
   {
     id: "1",
-    title: "DANCING IN THE DARK",
+    title: "ĐẶT TRÁI TIM LÊN BÀN",
     thumbnail:
-      "https://i.scdn.co/image/ab67616d00001e028bdbdf691a5b791a5afb515b",
-    artists: [{ id: "1", name: "SOOBIN" }],
+      "https://i.scdn.co/image/ab67616d00001e02e0fc80c36c75dcfb1a0ce485",
+    artists: [{ id: "1", name: "Tùng" }],
     url: "",
   },
 ];
