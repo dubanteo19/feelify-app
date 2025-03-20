@@ -5,7 +5,7 @@ import { Header } from "./Header";
 
 export const Layout = () => {
   return (
-    <div className="grid grid-cols-12  min-h-screen ">
+    <div className="grid grid-cols-12  min-h-screen   ">
       <SideBar
         className="col-span-2 
         min-h-screen 
