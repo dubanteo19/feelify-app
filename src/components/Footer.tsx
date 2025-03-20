@@ -50,7 +50,7 @@ export const Footer = () => {
               <p className="text-black font-bold">{item.footerHead}</p>
               <div className="flex flex-col ">
                 {item.links.map((link) => (
-                  <Link to={link.target}>{link.text}</Link>
+                  <Link className="!text-gray-700" to={link.target}>{link.text}</Link>
                 ))}
               </div>
             </div>

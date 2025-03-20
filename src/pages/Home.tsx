@@ -4,6 +4,7 @@ import { HotAlbums } from "@/components/Home/HotAlbums";
 import { RecommendedSongs } from "@/components/Home/RecommendedSongs";
 import { artists } from "@/data/artists";
 import { trendingSongs } from "@/data/songs";
+import { top100 } from "@/data/top100";
 import H5AudioPlayer from "react-h5-audio-player";
 
 export const Home = () => {
@@ -12,7 +13,7 @@ export const Home = () => {
       <HorizontalSongList
         title="Trending"
         showMore="/trending"
-        songs={trendingSongs}
+        songs={trendingSongs.slice(0,6)}
       />
       <HorizontalArtistList
         title="Nghệ sĩ nổi tiếng"
@@ -20,8 +21,13 @@ export const Home = () => {
         artists={artists}
       />
       <RecommendedSongs />
-      <HotAlbums/>
-      <H5AudioPlayer src="http://192.168.1.92:3000/music/lac.mp3" />
+      <HorizontalSongList
+        title="Top 100"
+        showMore="/top100"
+        songs={top100}
+      />
+      <HotAlbums />
+      <H5AudioPlayer src="http://10.0.1.219:3000/music/lac.mp3" />
     </div>
   );
 };

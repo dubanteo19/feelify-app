@@ -111,9 +111,6 @@
   --primary-foreground: #4cc9fe;
 }
 @layer base {
-  a {
-    @apply !text-gray-700 hover:!text-gray-900 hover:!underline;
-  }
   * {
     @apply border-border outline-ring/50;
   }
