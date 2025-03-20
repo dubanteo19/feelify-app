@@ -1,5 +1,6 @@
 import { HorizontalArtistList } from "@/components/Home/HorizontalArtistList";
 import { HorizontalSongList } from "@/components/Home/HorizontalSongList";
+import { HotAlbums } from "@/components/Home/HotAlbums";
 import { RecommendedSongs } from "@/components/Home/RecommendedSongs";
 import { artists } from "@/data/artists";
 import { trendingSongs } from "@/data/songs";
@@ -19,6 +20,7 @@ export const Home = () => {
         artists={artists}
       />
       <RecommendedSongs />
+      <HotAlbums/>
       <H5AudioPlayer src="http://192.168.1.92:3000/music/lac.mp3" />
     </div>
   );

@@ -1,3 +1,4 @@
+import { cn } from "@/lib/utils";
 import clsx from "clsx";
 import { Play } from "lucide-react";
 
@@ -6,6 +7,7 @@ interface CardProps {
   thumbnail?: string;
   subtitle: string;
   rounded?: boolean;
+  className?: string;
   url: string;
 }
 export const Card: React.FC<CardProps> = ({
@@ -13,10 +15,16 @@ export const Card: React.FC<CardProps> = ({
   thumbnail,
   subtitle,
   url,
+  className,
   rounded,
 }) => {
   return (
-    <div className="rounded-lg  hover:bg-gray-100 flex flex-col  shadow-lg col-span-2 group">
+    <div
+      className={cn(
+        "rounded-lg  hover:bg-gray-100 flex flex-col  shadow-lg col-span-2 group ",
+        className,
+      )}
+    >
       <div className="relative">
         <div className="h-48  w-full flex items-center justify-center overflow-hidden">
           <img

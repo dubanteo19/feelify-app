@@ -3,7 +3,7 @@ import { Song } from "@/types/Song";
 export const trendingSongs: Song[] = [
   {
     id: "1",
-    title: "Perhaps love test longgggggggggggggggg",
+    title: "Perhaps love ",
     thumbnail:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/John_Denver_1974.jpg/640px-John_Denver_1974.jpg",
     artists: [{ id: "1", name: "John Denver" }],

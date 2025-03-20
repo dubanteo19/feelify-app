@@ -27,7 +27,6 @@ const SongItem: React.FC<Song> = ({ id, thumbnail, artists, title }) => {
             <Heart size={17} />
           </div>
           <div className="rounded-full p-2 hover:bg-gray-300 cursor-pointer">
-
             <Ellipsis size={17} />
           </div>
         </div>
