@@ -20,6 +20,7 @@ export const Card: React.FC<CardProps> = ({
 }) => {
   return (
     <div
+      key={url}
       className={cn(
         "rounded-lg  hover:bg-gray-100 flex flex-col  shadow-lg col-span-2 group ",
         className,

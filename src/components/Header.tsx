@@ -1,6 +1,7 @@
 import { Home, LayoutList, Search } from "lucide-react";
 import { Input } from "./ui/input";
 import { Button } from "./ui/button";
+import { Link } from "react-router-dom";
 const SearchBar = () => {
   return (
     <div className="flex gap-1 items-center rounded-2xl border bg-gray-100 py-1 px-2">
@@ -33,16 +34,21 @@ export const Header = () => {
         </Button>
         <div className="inline-block w-[2px] h-6 bg-gray-400"></div>
         <Button
-          variant="secondary"
-          style={{ fontWeight: "bold", borderRadius: 50, fontSize: 12 }}
-        >
-          Đăng ký
-        </Button>
-        <Button
+          asChild
           variant="destructive"
           style={{ fontWeight: "bold", borderRadius: 50, fontSize: 12 }}
         >
-          Đăng nhập
+          <Link className="!text-white" to="/signup">
+            Đăng ký
+          </Link>
+        </Button>
+        <Button
+          asChild
+          style={{ fontWeight: "bold", borderRadius: 50, fontSize: 12 }}
+        >
+          <Link className="!text-white" to="/login">
+            Đăng nhập
+          </Link>
         </Button>
       </div>
     </div>

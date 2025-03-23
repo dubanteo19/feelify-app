@@ -29,6 +29,7 @@ const SideNavItem: React.FC<SideNavItemProps> = ({
   return (
     <div>
       <div
+        key={target}
         className={clsx(
           "flex text-sm items-center gap-2 py-2 px-4 ",
           selected ? "text-primary bg-gray-200" : "hover:text-primary",
