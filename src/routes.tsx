@@ -16,8 +16,8 @@ export const AppRoutes = () => {
           <Route path="signup" element={<Signup />} />
           <Route path="login" element={<Login />} />
           <Route path="search" element={<Search />}>
-            <Route index path="all" element={<AllSearch />} />
-            <Route path="songs" element={<SongSearch />} />
+            <Route index path="tat-ca" element={<AllSearch />} />
+            <Route path="bai-hat" element={<SongSearch />} />
           </Route>
         </Route>
       </Routes>
