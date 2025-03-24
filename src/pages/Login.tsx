@@ -11,9 +11,9 @@ import {
 } from "@/components/ui/form";
 import { useForm } from "react-hook-form";
 import { Input } from "@/components/ui/input";
-import { on } from "events";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 const OtherLogins = () => {
   return (
     <div className="flex flex-col gap-2 mt-4 ">
@@ -126,6 +126,12 @@ export const Login = () => {
                 </Button>
               </form>
             </Form>
+            <p className="mt-3">
+              Bạn chưa có tài khoản?{" "}
+              <Link className="!text-primary" to="/signup">
+                đăng ký ngay
+              </Link>
+            </p>
           </div>
         </div>
       </div>
