@@ -28,17 +28,18 @@ export const Header = () => {
       <div className="flex gap-3">
         <Button
           style={{ fontWeight: "bold", borderRadius: 50, fontSize: 12 }}
-          className="bg-primary text-white  "
+          variant="destructive"
+          className=" text-white  "
         >
           Nâng cấp tài khoản
         </Button>
         <div className="inline-block w-[2px] h-6 bg-gray-400"></div>
         <Button
           asChild
-          variant="destructive"
+          variant="outline"
           style={{ fontWeight: "bold", borderRadius: 50, fontSize: 12 }}
         >
-          <Link className="!text-white" to="/signup">
+          <Link className="!text-gray-900" to="/signup">
             Đăng ký
           </Link>
         </Button>
