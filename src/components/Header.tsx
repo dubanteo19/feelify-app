@@ -4,7 +4,7 @@ import { Button } from "./ui/button";
 import { Link } from "react-router-dom";
 const SearchBar = () => {
   return (
-    <div className="flex gap-1 items-center rounded-2xl border bg-gray-100 py-1 px-2">
+    <div className="flex gap-1 items-center   rounded-2xl border bg-gray-100 py-1 px-2">
       <Search />
       <Input
         size={40}
