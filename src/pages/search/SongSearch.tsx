@@ -33,10 +33,13 @@ const HorizontalSongCard: React.FC<Song> = ({
 export const SongSearch = () => {
   const songs = trendingSongs;
   return (
-    <div className="flex flex-col gap-4 mt-4">
-      {songs.map((song) => (
-        <HorizontalSongCard {...song} />
-      ))}
+    <div>
+      <h2 className="text-xl font-bold my-4">Bài hát</h2>
+      <div className="flex flex-col gap-4 mt-4">
+        {songs.map((song) => (
+          <HorizontalSongCard {...song} />
+        ))}
+      </div>
     </div>
   );
 };
