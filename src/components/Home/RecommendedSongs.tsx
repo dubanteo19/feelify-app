@@ -3,7 +3,7 @@ import { TitleBar } from "./TitleBar";
 import { trendingSongs } from "@/data/songs";
 import { Ellipsis, Heart, Play } from "lucide-react";
 
-const SongItem: React.FC<Song> = ({ id, thumbnail, artists, title }) => {
+export const SongItem: React.FC<Song> = ({ id, thumbnail, artists, title }) => {
   return (
     <div key={id} className="grid grid-cols-6 gap-3 hover:bg-gray-200 p-2 rounded-sm group">
       <div className="col-span-1 rounded-sm relative overflow-hidden">

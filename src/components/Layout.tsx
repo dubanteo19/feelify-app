@@ -5,9 +5,10 @@ import { Header } from "./Header";
 
 export const Layout = () => {
   return (
-    <div className="grid grid-cols-12  min-h-screen   ">
+    <div className="grid grid-cols-12  min-h-screen    ">
       <SideBar
         className="col-span-2 
+        shadow-[5px_0_35px_rgba(0,0,0,0.25)]
         min-h-screen 
         bg-gray-100
         "

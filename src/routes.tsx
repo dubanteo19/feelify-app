@@ -6,6 +6,8 @@ import { Login } from "./pages/Login";
 import { Search } from "./pages/search/Search";
 import { AllSearch } from "./pages/search/AllSearch";
 import { SongSearch } from "./pages/search/SongSearch";
+import { PlaylistSearch } from "./pages/search/PlaylistSearch";
+import { ArtistSearch } from "./pages/search/ArtistSearch";
 
 export const AppRoutes = () => {
   return (
@@ -16,8 +18,10 @@ export const AppRoutes = () => {
           <Route path="signup" element={<Signup />} />
           <Route path="login" element={<Login />} />
           <Route path="search" element={<Search />}>
-            <Route index path="all" element={<AllSearch />} />
-            <Route path="songs" element={<SongSearch />} />
+            <Route index path="tat-ca" element={<AllSearch />} />
+            <Route path="bai-hat" element={<SongSearch />} />
+            <Route path="playlist" element={<PlaylistSearch />} />
+            <Route path="artist" element={<ArtistSearch />} />
           </Route>
         </Route>
       </Routes>

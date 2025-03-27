@@ -4,7 +4,7 @@ import { Button } from "./ui/button";
 import { Link } from "react-router-dom";
 const SearchBar = () => {
   return (
-    <div className="flex gap-1 items-center rounded-2xl border bg-gray-100 py-1 px-2">
+    <div className="flex gap-1 items-center   rounded-2xl border bg-gray-100 py-1 px-2">
       <Search />
       <Input
         size={40}
@@ -20,9 +20,11 @@ export const Header = () => {
   return (
     <div className="flex justify-between items-center px-5 py-2">
       <div className="flex gap-3 ml-20">
-        <div className="rounded-full bg-primary text-white p-3">
-          <Home />
-        </div>
+        <Link className="!text-inherit" to="/">
+          <div className="rounded-full bg-primary text-white p-3">
+            <Home />
+          </div>
+        </Link>
         <SearchBar />
       </div>
       <div className="flex gap-3">

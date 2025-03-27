@@ -71,7 +71,9 @@ export const SideBar: React.FC<{ className?: string }> = ({ className }) => {
   const logo =
     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTk0EgcCC6cETYRVMh3erlxvKfLD91n7eVsYQ&s";
   return (
-    <div className={className}>
+    <div
+      className={className}
+    >
       <div className="flex p-2 ml-2">
         <img className="h-8 w-8" src={logo}></img>
       </div>
