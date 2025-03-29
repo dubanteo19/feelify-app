@@ -1,5 +1,4 @@
 import { Card } from "@/components/Home/Card";
-
 import { artists } from "@/data/artists";
 export const ArtistSearch = () => {
   const data = artists.concat(artists);
