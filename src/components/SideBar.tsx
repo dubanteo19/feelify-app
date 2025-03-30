@@ -11,6 +11,7 @@ import {
   Disc3,
 } from "lucide-react";
 import { Button } from "./ui/button";
+import { Link } from "react-router-dom";
 
 interface SideNavItemProps {
   icon: any;
@@ -19,7 +20,7 @@ interface SideNavItemProps {
   selected?: boolean;
   color?: string;
 }
-const SideNavItem: React.FC<SideNavItemProps> = ({
+export const SideNavItem: React.FC<SideNavItemProps> = ({
   icon,
   title,
   target,
@@ -27,25 +28,24 @@ const SideNavItem: React.FC<SideNavItemProps> = ({
   color,
 }) => {
   return (
-    <div>
-      <div
-        key={target}
+    <Link
+      to={target}
+      key={target}
+      className={clsx(
+        "flex text-sm items-center !text-inherit gap-2 py-2 px-4 ",
+        selected ? "!text-primary bg-gray-200" : "hover:!text-primary",
+      )}
+    >
+      <span
         className={clsx(
-          "flex text-sm items-center gap-2 py-2 px-4 ",
-          selected ? "text-primary bg-gray-200" : "hover:text-primary",
+          "text-sm bg",
+          color ? `${color}  !text-white rounded-full p-1` : "",
         )}
       >
-        <span
-          className={clsx(
-            "text-sm bg",
-            color ? `${color}  text-white rounded-full p-1` : "",
-          )}
-        >
-          {icon}
-        </span>
-        {title}
-      </div>
-    </div>
+        {icon}
+      </span>
+      {title}
+    </Link>
   );
 };
 const UpgradePremiumBanner = () => {
@@ -71,9 +71,7 @@ export const SideBar: React.FC<{ className?: string }> = ({ className }) => {
   const logo =
     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTk0EgcCC6cETYRVMh3erlxvKfLD91n7eVsYQ&s";
   return (
-    <div
-      className={className}
-    >
+    <div className={className}>
       <div className="flex p-2 ml-2">
         <img className="h-8 w-8" src={logo}></img>
       </div>

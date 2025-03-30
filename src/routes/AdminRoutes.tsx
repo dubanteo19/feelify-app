@@ -1,0 +1,15 @@
+import { AdminLayout } from "@/layout/AdminLayout";
+import { Dashboard } from "@/pages/admin/Dashboard";
+import { ManageAssets } from "@/pages/admin/ManageAssets";
+import { Route, Routes } from "react-router-dom";
+
+export const AdminRoutes = () => {
+  return (
+    <Routes>
+      <Route path="/admin" element={<AdminLayout />}>
+        <Route index element={<Dashboard />} />
+        <Route path="manage-assets" element={<ManageAssets />} />
+      </Route>
+    </Routes>
+  );
+};

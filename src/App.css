@@ -108,7 +108,7 @@
 }
 @theme {
   --primary: #37afe1;
-  --primary-foreground: #4cc9fe;
+  --primary-foreground: #FFFFFF;
 }
 @layer base {
   * {
