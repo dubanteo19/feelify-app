@@ -5,9 +5,6 @@ import {
   BreadcrumbPage,
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
-import { Button } from "@/components/ui/button";
-import { Link } from "react-router-dom";
-
 export const ManageAssets = () => {
   return (
     <div className="py-2">
