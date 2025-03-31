@@ -1,4 +1,4 @@
-import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import { Signup } from "@/pages/Signup";
 import { Login } from "@/pages/Login";
 import { Search } from "@/pages/search/Search";
@@ -7,7 +7,7 @@ import { SongSearch } from "@/pages/search/SongSearch";
 import { PlaylistSearch } from "@/pages/search/PlaylistSearch";
 import { ArtistSearch } from "@/pages/search/ArtistSearch";
 import { Home } from "@/pages/Home";
-import { Layout } from "../Layout";
+import { Layout } from "@/layout/Layout";
 export const UserRoutes = () => {
   return (
     <Routes>
